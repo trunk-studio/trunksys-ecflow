@@ -1,0 +1,61 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "ssn",
+            "fieldType": "String",
+            "fieldIsEnum": false,
+            "fieldNameCapitalized": "Ssn",
+            "fieldNameUnderscored": "ssn",
+            "fieldInJavaBeanMethod": "Ssn",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldIsEnum": false,
+            "fieldNameCapitalized": "Email",
+            "fieldNameUnderscored": "email",
+            "fieldInJavaBeanMethod": "Email",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "pattern"
+            ],
+            "fieldValidateRulesPattern": "^[a-zA-Z0-9]*$"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "phone1",
+            "fieldType": "String",
+            "fieldIsEnum": false,
+            "fieldNameCapitalized": "Phone1",
+            "fieldNameUnderscored": "phone1",
+            "fieldInJavaBeanMethod": "Phone1",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "phone2",
+            "fieldType": "String",
+            "fieldIsEnum": false,
+            "fieldNameCapitalized": "Phone2",
+            "fieldNameUnderscored": "phone2",
+            "fieldInJavaBeanMethod": "Phone2",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150801094359",
+    "dto": "no",
+    "pagination": "pager",
+    "validation": true
+}

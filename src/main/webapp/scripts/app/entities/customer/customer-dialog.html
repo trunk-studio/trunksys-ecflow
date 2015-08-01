@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myCustomerLabel" translate="ecflowApp.customer.home.createOrEditLabel">Create or edit a Customer</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label translate="global.field.id">ID</label>
+            <input type="text" class="form-control" name="id"
+                    ng-model="customer.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="ecflowApp.customer.ssn" for="field_ssn">Ssn</label>
+            <input type="text" class="form-control" name="ssn" id="field_ssn"
+                    ng-model="customer.ssn">
+
+        </div>
+        <div class="form-group">
+            <label translate="ecflowApp.customer.email" for="field_email">Email</label>
+            <input type="text" class="form-control" name="email" id="field_email"
+                    ng-model="customer.email" ng-pattern="/^[a-zA-Z0-9]*$/">
+
+            <div ng-show="editForm.email.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.email.$error.pattern" translate="entity.validation.pattern" translate-value-pattern="^[a-zA-Z0-9]*$">
+                    This field should follow pattern "^[a-zA-Z0-9]*$".
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate="ecflowApp.customer.phone1" for="field_phone1">Phone1</label>
+            <input type="text" class="form-control" name="phone1" id="field_phone1"
+                    ng-model="customer.phone1">
+
+        </div>
+        <div class="form-group">
+            <label translate="ecflowApp.customer.phone2" for="field_phone2">Phone2</label>
+            <input type="text" class="form-control" name="phone2" id="field_phone2"
+                    ng-model="customer.phone2">
+
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

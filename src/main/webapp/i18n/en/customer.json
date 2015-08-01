@@ -1,0 +1,21 @@
+{
+    "ecflowApp": {
+        "customer" : {
+            "home": {
+                "title": "Customers",
+                "createLabel": "Create a new Customer",
+                "createOrEditLabel": "Create or edit a Customer"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Customer {{ id }}?"
+            },
+            "detail": {
+                "title": "Customer"
+            },
+            "ssn": "Ssn",
+            "email": "Email",
+            "phone1": "Phone1",
+            "phone2": "Phone2"
+        }
+    }
+}
